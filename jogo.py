@@ -9,11 +9,8 @@ def exibir_tabuleiro(tabuleiro):
     print("+-------+-------+-------+")
     for linha in tabuleiro:
         print("|       |       |       |")
-        print("|", end="")
-        for casa in linha:
-            # Centraliza cada elemento (número, X ou O) dentro da célula
-            print(f"   {casa:^3}|", end="")
-        print("\n|       |       |       |")
+        print(f"|   {linha[0]}   |   {linha[1]}   |   {linha[2]}   |")
+        print("|       |       |       |")
         print("+-------+-------+-------+")
 
 # Função: jogada_usuario(tabuleiro)
